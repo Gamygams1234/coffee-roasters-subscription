@@ -187,14 +187,14 @@ header .top .right-side .display-show {
   color: transparent;
   font-size: min(max(2.5rem, 9.375vw), 9.375rem);
 }
-.our-collection .content .four-grid-cofee {
+.our-collection .content .four-grid-coffee {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 2.5rem;
 }
-.our-collection .content .four-grid-cofee .coffee-item {
+.our-collection .content .four-grid-coffee .coffee-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@ header .top .right-side .display-show {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.our-collection .content .four-grid-cofee .coffee-item .coffee-image {
+.our-collection .content .four-grid-coffee .coffee-item .coffee-image {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,10 +216,10 @@ header .top .right-side .display-show {
           justify-content: center;
   margin-bottom: 2rem;
 }
-.our-collection .content .four-grid-cofee .coffee-item .coffee-image img {
+.our-collection .content .four-grid-coffee .coffee-item .coffee-image img {
   width: 65%;
 }
-.our-collection .content .four-grid-cofee .coffee-item .description {
+.our-collection .content .four-grid-coffee .coffee-item .description {
   color: #343e4c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,13 +229,13 @@ header .top .right-side .display-show {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.our-collection .content .four-grid-cofee .coffee-item .description h3 {
+.our-collection .content .four-grid-coffee .coffee-item .description h3 {
   color: #343e4c;
   font-size: 1.5rem;
   text-transform: none;
   margin-bottom: 1rem;
 }
-.our-collection .content .four-grid-cofee .coffee-item .description p {
+.our-collection .content .four-grid-coffee .coffee-item .description p {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -512,6 +512,9 @@ header .top .right-side .display-show {
   padding-top: 4rem;
   padding-bottom: 42rem;
   border-radius: 1rem;
+  background-image: url(../assets/about/desktop/bg-quality.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .why-choose-us .content .description h1 {
   max-width: 576px;
@@ -1049,26 +1052,26 @@ header .top .right-side .display-show a {
     height: auto;
   }
 
-  .our-collection .content .four-grid-cofee .coffee-item {
+  .our-collection .content .four-grid-coffee .coffee-item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .coffee-image {
+  .our-collection .content .four-grid-coffee .coffee-item .coffee-image {
     width: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0 2em 0 0;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .description {
+  .our-collection .content .four-grid-coffee .coffee-item .description {
     text-align: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .description h3 {
+  .our-collection .content .four-grid-coffee .coffee-item .description h3 {
     text-align: left;
     margin: 0 0 1em 0;
   }
@@ -1515,17 +1518,17 @@ header .top .right-side .display-show a {
     max-width: 445px;
   }
 
-  .our-collection .content .four-grid-cofee {
+  .our-collection .content .four-grid-coffee {
     -ms-grid-columns: 1fr 2.5rem 1fr 2.5rem 1fr 2.5rem 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .our-collection .content .four-grid-cofee .coffee-item {
+  .our-collection .content .four-grid-coffee .coffee-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .coffee-image {
+  .our-collection .content .four-grid-coffee .coffee-item .coffee-image {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1538,10 +1541,10 @@ header .top .right-side .display-show a {
             justify-content: center;
     margin-bottom: 2rem;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .description {
+  .our-collection .content .four-grid-coffee .coffee-item .description {
     text-align: center;
   }
-  .our-collection .content .four-grid-cofee .coffee-item .description h3 {
+  .our-collection .content .four-grid-coffee .coffee-item .description h3 {
     margin-bottom: 1rem;
     text-align: center;
   }

@@ -146,7 +146,7 @@ header {
       // this will give us a responsive text with a minimum, how much vw, maximum
       font-size: min(max(2.5rem, 9.375vw), 9.375rem);
     }
-    .four-grid-cofee {
+    .four-grid-coffee {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 2.5rem;
@@ -373,6 +373,11 @@ header {
       padding-top: 4rem;
       padding-bottom: 42rem;
       border-radius: 1rem;
+      background-image: url(../assets/about/desktop/bg-quality.png);
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
       h1 {
         max-width: 576px;
         margin-bottom: 1rem;
@@ -817,7 +822,7 @@ footer {
   }
   .our-collection {
     .content {
-      .four-grid-cofee {
+      .four-grid-coffee {
         .coffee-item {
           flex-direction: row;
           .coffee-image {
@@ -1247,7 +1252,7 @@ footer {
 
   .our-collection {
     .content {
-      .four-grid-cofee {
+      .four-grid-coffee {
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
         .coffee-item {
