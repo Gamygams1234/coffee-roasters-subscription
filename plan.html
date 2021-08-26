@@ -166,33 +166,31 @@
   <div id="myModal" class="modal">
 
     <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p id="final-summary">Some text in the Modal..</p>
+    <div class="modal-center">
+      <div class="modal-header">
+        <h3 class="fraunces fw-900">Order Summary</h3>
+      </div>
+      <div class="modal-body">
+        <h3 id="final-summary" class="fraunces fw-900">Some text in the Modal..</h3>
+        <p class="barlow">
+          Is this correct? You can proceed to checkout or go back to plan selection if something
+          is off. Subscription discount codes can also be redeemed at the checkout.</p>
+        <div class="modal-bottom">
+          <div class="desktop-price">
+            <h3 class="fraunces fw-900"><span class="monthly-price"></span> /mo</h3>
+          </div>
+          <button class="btn cyan-btn fw-700 " id="create-plan-button">Checkout<span class="mobile-price"> - <span
+                class="monthly-price"></span> /mo</span></button>
+        </div>
+      </div>
     </div>
 
   </div>
 
 
-  Order Summary
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
 
-  Create my plan!
 
-  <!-- Modal -->
-  Order Summary
-
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
-
-  Is this correct? You can proceed to checkout or go back to plan selection if something
-  is off. Subscription discount codes can also be redeemed at the checkout.
-
-  $_____/month
-
-  Checkout
-  <!-- End modal -->
+  <script src="scripts/scripts.js"></script>
   <script>
     var coffeeMethodPanel = document.getElementById("coffee-methods");
     var coffeeTypePanel = document.getElementById("coffee-types");
@@ -205,8 +203,9 @@
     var accordionItems = document.getElementsByClassName("accordion-item");
     var createPlanBtn = document.getElementById("create-plan-button");
     var modal = document.getElementById("myModal");
-    var span = document.getElementsByClassName("close")[0];
     var finalSummary = document.getElementById("final-summary");
+    var panels = document.getElementsByClassName("panel");
+    var modalMonthlyPrice = document.getElementsByClassName("monthly-price");
     var updateItem;
     var summary;
     var state = {
@@ -478,26 +477,42 @@
     });
     accordionIndication.addEventListener("click", function (e) {
       for (let i = 0; i < this.children.length; i++) {
-        this.children[i].classList.remove("active");
+        if (this.children[i] == e.target.parentNode | this.children[i] == e.target) {
+          e.target.parentNode.classList.add("active");
+          panels[i].style.display = "grid";
+          accordionItems[i].classList.add("active");
+
+        } else if (this.children[i] == e.target) {
+          e.target.classList.add("active");
+          panels[i].style.display = "grid";
+          accordionItems[i].classList.add("active");
+        } else { this.children[i].classList.remove("active"); }
+
       }
-      if (e.target.classList.contains("accordion-link")) {
-        e.target.classList.add("active");
-      } else if (e.target.parentNode.classList.contains("accordion-link")) {
-        e.target.parentNode.classList.add("active");
-      }
+      // if (e.target.classList.contains("accordion-link")) {
+      //   e.target.classList.add("active");
+      //   console.log(e.target);
+      // } else if (e.target.parentNode.classList.contains("accordion-link")) {
+      //   e.target.parentNode.classList.add("active");
+      //   console.log(e.target.parentNode);
+      // }
 
     });
     createPlanBtn.addEventListener("click", function (e) {
       if (!createPlanBtn.classList.contains("disabled-btn")) {
         modal.style.display = "flex";
         finalSummary.innerHTML = summary
+        for (let i = 0; i < modalMonthlyPrice.length; i++) {
+          modalMonthlyPrice[i].innerHTML = `$${state.monthlyPrice.toFixed(2).toString()}`
+        }
       }
     })
-    span.addEventListener("click", function (e) {
-      if (!createPlanBtn.classList.contains("disabled-btn")) {
-        modal.style.display = "none";
-      }
-    })
+    //to close the modal
+    // span.addEventListener("click", function (e) {
+    //   if (!createPlanBtn.classList.contains("disabled-btn")) {
+    //     modal.style.display = "none";
+    //   }
+    // })
     // closing the modal af
     window.onclick = function (event) {
       if (event.target == modal) {
