@@ -1,0 +1,556 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Fraunces:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <header class="padding-container">
+    <div class="top width-container barlow">
+      <div class="left-side">
+        <img src="./assets/shared/desktop/logo.svg" alt="" />
+      </div>
+      <div class="right-side">
+        <div class="menu fw-600" id="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="plan.html">Create Your Plan</a>
+        </div>
+        <div class="nav-icon">
+          <i class="fa fa-bars" id="bar-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="padding-container create-plan-jumbo">
+    <div class="content width-container">
+      <h1 class="fraunces fw-900"> Create a plan</h1>
+      <p class="barlow">
+        Build a subscription plan that best fits your needs. We offer an assortment of the best
+        artisan coffees from around the globe delivered fresh to your door.
+      </p>
+    </div>
+  </section>
+  <section class="plan-steps">
+    <div class="content width-container">
+      <div class="steps-three-grid">
+        <div class="step">
+          <div class="circle"></div>
+          <h3 class="fraunces fw-900 number">01</h3>
+          <h3 class="fraunces fw-900 step-title">Pick your coffee</h3>
+          <p class="barlow">Select from our evolving range of artisan coffees. Our beans are ethically sourced
+            and we
+            pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+          </p>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <h3 class="fraunces fw-900 number">02</h3>
+          <h3 class="fraunces fw-900 step-title">Choose the frequency </h3>
+          <p class="barlow">Customize your order frequency, quantity, even your
+            roast style and grind type. Pause, skip or cancel your subscription with no
+            commitment through our online portal. </p>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <h3 class="fraunces fw-900 number">03</h3>
+          <h3 class="fraunces fw-900 step-title">Receive and enjoy!</h3>
+          <p class="barlow">We ship your
+            package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+            world-class coffees curated to provide a distinct tasting experience. </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="padding-container select_section">
+    <div class="width-container content">
+      <div class="accordion-indication" id="accordion-indication">
+        <a href="#coffee-methods-accordion" class="accordion-link active">
+          <span class="fraunces fw-900 number green">01</span>
+          <h2 class="fraunces fw-900">Preferences</h2>
+        </a>
+        <a href="#coffee-types-accordion" class="accordion-link">
+          <span class="fraunces fw-900 number green">02</span>
+          <h2 class=" fraunces fw-900">Bean type</h2>
+        </a>
+        <a href="#coffee-amounts-accordion" class="accordion-link">
+          <span class="fraunces fw-900 number green">03</span>
+          <h2 class="fraunces fw-900">Quantity</h2>
+        </a>
+        <a href="#coffee-grinds-accordion" class="accordion-link">
+          <span class="fraunces fw-900 number green">04</span>
+          <h2 class="fraunces fw-900">Grind option</h2>
+        </a>
+        <a href="#coffee-frequency-accordion" class="accordion-link">
+          <span class="fraunces fw-900 number green">05</span>
+          <h2 class="fraunces fw-900">Deliveries</h2>
+        </a>
+
+
+      </div>
+      <div class="accordion-list padding-container" id="accordion-list">
+        <div class="accordion-item accordion-pull" id="coffee-methods-accordion">
+          <h3 class="fraunces fw-900 number">How do you drink your coffee?</h3>
+          <img class="arrow " src="./assets/plan/desktop/icon-arrow.svg" />
+        </div>
+        <div class="panel" id="coffee-methods"></div>
+        <div class="accordion-item accordion-pull" id="coffee-types-accordion">
+          <h3 class="fraunces fw-900 number">What type of Coffee?</h3>
+          <img class="arrow " src="./assets/plan/desktop/icon-arrow.svg" />
+        </div>
+        <div class="panel" id="coffee-types"></div>
+        <div class="accordion-item accordion-pull" id="coffee-amounts-accordion">
+          <h3 class="fraunces fw-900 number">How much would you like?</h3>
+          <img class="arrow " src="./assets/plan/desktop/icon-arrow.svg" />
+        </div>
+        <div class="panel" id="coffee-amounts"></div>
+        <div class="accordion-item accordion-pull" id="coffee-grinds-accordion">
+          <h3 class="fraunces fw-900 number">Want us to grind them?</h3>
+          <img class="arrow " src="./assets/plan/desktop/icon-arrow.svg" />
+        </div>
+        <div class="panel" id="coffee-grinds"></div>
+        <div class="accordion-item accordion-pull" id="coffee-frequency-accordion">
+          <h3 class="fraunces fw-900 number">How often shoud we deliver?</h3>
+          <img class="arrow " src="./assets/plan/desktop/icon-arrow.svg" />
+        </div>
+        <div class="panel" id="coffee-frequency"></div>
+
+      </div>
+
+  </section>
+  <section class="order-summary padding-container">
+    <div class="content width-container padding-container">
+      <h2 class="barlow">
+        Order Summary
+      </h2>
+      <h3 class="fraunces fw-900" id="page-summary">
+      </h3>
+
+    </div>
+  </section>
+  <section class="open-modal padding-container width-container ">
+    <button class="btn cyan-btn fw-700 disabled-btn" id="create-plan-button">Create my plan!</button>
+  </section>
+
+  <footer class="padding-container">
+    <div class="content width-container">
+      <div class="logo">
+        <img src="./assets/shared/desktop/logo-white.svg" alt="" />
+      </div>
+      <div class="links barlow fw-600 nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="plan.html">Create Your Plan</a>
+      </div>
+      <div class="social-links links">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i> </a>
+      </div>
+    </div>
+  </footer>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="final-summary">Some text in the Modal..</p>
+    </div>
+
+  </div>
+
+
+  Order Summary
+  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+  sent to me _____.”
+
+  Create my plan!
+
+  <!-- Modal -->
+  Order Summary
+
+  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+  sent to me _____.”
+
+  Is this correct? You can proceed to checkout or go back to plan selection if something
+  is off. Subscription discount codes can also be redeemed at the checkout.
+
+  $_____/month
+
+  Checkout
+  <!-- End modal -->
+  <script>
+    var coffeeMethodPanel = document.getElementById("coffee-methods");
+    var coffeeTypePanel = document.getElementById("coffee-types");
+    var coffeeAmountPanel = document.getElementById("coffee-amounts");
+    var coffeeGrindsPanel = document.getElementById("coffee-grinds");
+    var coffeeFrequencyPanel = document.getElementById("coffee-frequency");
+    var pageSummary = document.getElementById("page-summary");
+    var accordionList = document.getElementById("accordion-list");
+    var accordionIndication = document.getElementById("accordion-indication");
+    var accordionItems = document.getElementsByClassName("accordion-item");
+    var createPlanBtn = document.getElementById("create-plan-button");
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    var finalSummary = document.getElementById("final-summary");
+    var updateItem;
+    var summary;
+    var state = {
+      method: '',
+      type: '',
+      amount: '',
+      grind: '',
+      frequency: '',
+      price: '',
+      monthlyPrice: ''
+    }
+    var coffeeMethods = [{
+      item: 'Capsule',
+      description: `Distinct, high quality coffee from a specific family-owned farm`,
+    }, {
+      item: 'Filter',
+      description: `For pour over or drip methods like Aeropress, Chemex, and V60`,
+    }, {
+      item: 'Espresso',
+      description: `Dense and finely ground beans for an intense, flavorful experience`,
+    }];
+
+    var coffeeTypes = [{
+      item: 'Single origin',
+      description: `Compatible with Nespresso systems and similar brewers`,
+    }, {
+      item: 'Decaf',
+      description: `Just like regular coffee, except the caffeine has been removed`,
+    }, {
+      item: 'Blended',
+      description: `Combination of two or three dark roasted beans of organic coffees`,
+    }];
+
+    var coffeeAmounts = [{
+      item: '250g',
+      description: `Perfect for the solo drinker. Yields about 12 delicious cups.`,
+    }, {
+      item: '500g',
+      description: `Perfect option for a couple. Yields about 40 delectable cups.`,
+    }, {
+      item: '1000g',
+      description: `Perfect for offices and events. Yields about 90 delightful cups.`,
+    }];
+
+    var coffeeGrinds = [{
+      item: 'Wholebean',
+      description: `Best choice if you cherish the full sensory experience`,
+    }, {
+      item: 'Filter',
+      description: `For drip or pour-over coffee methods such as V60 or Aeropress`,
+    }, {
+      item: 'Cafetiére',
+      description: `Course ground beans specially suited for french press coffee`,
+    }];
+
+    var coffeeFrequency = [{
+      item: 'Every Week',
+      pricePerShipment: "",
+      description: `Includes free first-class shipping.`,
+    }, {
+      item: 'Every 2 weeks',
+      pricePerShipment: "",
+      description: `Includes free priority shipping.`,
+    }, {
+      item: 'Every month',
+      pricePerShipment: "",
+      description: `Includes free priority shipping.`,
+    }];
+    var coffeePrices = {
+      '250g':
+      {
+        'Every Week': 7.20,
+        'Every 2 weeks': 9.60,
+        'Every month': 22.00,
+      },
+      '500g':
+      {
+        'Every Week': 13.00,
+        'Every 2 weeks': 17.50,
+        'Every month': 12.00,
+      },
+      '1000g':
+      {
+        'Every Week': 22.00,
+        'Every 2 weeks': 32.00,
+        'Every month': 42.00,
+      }
+    }
+
+    function checkCoffeePrice(amount, frequency) {
+      if (frequency !== "" && amount !== "") {
+        let prices = coffeePrices[amount];
+        let priceArray = [];
+        let price;
+        for (let key in prices) {
+          priceArray.push(prices[key].toFixed(2).toString());
+        }
+        price = coffeePrices[state.amount][frequency];
+        state.price = price;
+        updateCoffeeFrequency(priceArray);
+        if (frequency === 'Every Week') {
+          state.monthlyPrice = price * 4;
+        } else if (frequency === 'Every 2 weeks') {
+          state.monthlyPrice = price * 2;
+        } else if (frequency === 'Every month') {
+          state.monthlyPrice = price * 1;
+        }
+
+
+      } else if (amount !== "") {
+
+        let prices = coffeePrices[amount];
+        let priceArray = [];
+        for (let key in prices) {
+          priceArray.push(prices[key].toFixed(2).toString());
+        }
+        for (let i = 0; i < coffeeFrequency.length; i++) {
+          coffeeFrequency[i].pricePerShipment = priceArray[i];
+        }
+        updateCoffeeFrequency(priceArray);
+      }
+
+    }
+
+    accordionList.addEventListener("click", function (e) {
+      if (e.target.classList.contains("accordion-pull")) {
+        e.target.classList.toggle("active");
+        var panel = e.target.nextElementSibling;
+        if (panel.style.display === "grid") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "grid";
+        }
+      } else if (e.target.parentNode.classList.contains("accordion-pull")) {
+        e.target.parentNode.classList.toggle("active");
+        var panel = e.target.parentNode.nextElementSibling;
+        if (panel.style.display === "grid") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "grid";
+        }
+      }
+
+    });
+
+
+
+    function updateText() {
+      if (state.method === "Capsule") {
+        summary = `“I drink coffee using <span class="green-text">${state.method}s</span>, with a <span class="green-text">${state.type == '' ? '_____' : state.type}</span> type of bean. <span class="green-text">${state.amount == '' ? '_____' : state.amount}</span>
+      sent to me <span class="green-text">${state.frequency == '' ? '_____' : state.frequency}</span>.”`;
+        accordionItems[3].classList.remove("accordion-pull");
+        // taking out the next element sibling
+        accordionItems[3].nextElementSibling.style.display = "none";
+
+      } else {
+        summary = `“I drink coffee as <span class="green-text">${state.method == '' ? '_____' : state.method}</span>, with a <span class="green-text">${state.type == '' ? '_____' : state.type}</span> type of bean. <span class="green-text">${state.amount == '' ? '_____' : state.amount}</span> ground ala <span class="green-text">${state.grind == '' ? '_____' : state.grind}</span>,
+      sent to me <span class="green-text">${state.frequency == '' ? '_____' : state.frequency}</span>.”`;
+        accordionItems[3].classList.add("accordion-pull");
+      }
+      pageSummary.innerHTML = summary;
+    }
+
+    function updateState(param, param2) {
+      if (param.classList.contains("coffee-selection")) {
+        let index = parseInt(param.attributes.index.nodeValue);
+        updateItem = param2[index].item;
+        param.classList.add('selected');
+      } else if (param.parentNode.classList.contains("coffee-selection")) {
+        let index = parseInt(param.parentNode.attributes.index.nodeValue);
+        updateItem = param2[index].item;
+        param.parentNode.classList.add('selected');
+      }
+
+    }
+    function allowingModal() {
+      if (createPlanBtn.classList.contains("disabled-btn")) {
+        createPlanBtn.classList.remove("disabled-btn");
+      }
+      if (state.method === "") {
+        createPlanBtn.classList.add("disabled-btn");
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+        accordionIndication.children[0].classList.add("active");
+        coffeeMethodPanel.style.display = "grid";
+      } else if (state.type === "") {
+        createPlanBtn.classList.add("disabled-btn");
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+        accordionIndication.children[1].classList.add("active");
+        coffeeTypePanel.style.display = "grid";
+      } else if (state.amount === "") {
+        createPlanBtn.classList.add("disabled-btn");
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+        accordionIndication.children[2].classList.add("active");
+        coffeeAmountPanel.style.display = "grid";
+      } else if (state.grind === "" && state.method != "Capsule") {
+        createPlanBtn.classList.add("disabled-btn");
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+        accordionIndication.children[3].classList.add("active");
+        coffeeGrindsPanel.style.display = "grid";
+      } else if (state.frequency === "") {
+        createPlanBtn.classList.add("disabled-btn");
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+        accordionIndication.children[4].classList.add("active");
+        coffeeFrequencyPanel.style.display = "grid";
+      } else {
+        for (let i = 0; i < accordionIndication.children.length; i++) {
+          accordionIndication.children[i].classList.remove("active");
+        }
+      }
+
+    }
+
+    coffeeMethodPanel.addEventListener("click", function (e) {
+      this.childNodes.forEach(function (item) {
+        item.classList.remove("selected");
+      })
+      updateState(e.target, coffeeMethods);
+      state.method = updateItem;
+      updateText();
+      allowingModal();
+    });
+    coffeeTypePanel.addEventListener("click", function (e) {
+      this.childNodes.forEach(function (item) {
+        item.classList.remove("selected");
+      })
+      updateState(e.target, coffeeTypes);
+      state.type = updateItem;
+      updateText();
+      allowingModal();
+    });
+    coffeeAmountPanel.addEventListener("click", function (e) {
+      this.childNodes.forEach(function (item) {
+        item.classList.remove("selected");
+      })
+      updateState(e.target, coffeeAmounts);
+      state.amount = updateItem;
+      checkCoffeePrice(updateItem, state.frequency);
+      updateText();
+      allowingModal();
+    });
+    coffeeGrindsPanel.addEventListener("click", function (e) {
+      this.childNodes.forEach(function (item) {
+        item.classList.remove("selected");
+      })
+      updateState(e.target, coffeeGrinds);
+      state.grind = updateItem;
+      updateText();
+      allowingModal();
+    });
+    coffeeFrequencyPanel.addEventListener("click", function (e) {
+      this.childNodes.forEach(function (item) {
+        item.classList.remove("selected");
+      })
+      updateState(e.target, coffeeFrequency);
+      state.frequency = updateItem;
+      checkCoffeePrice(state.amount, updateItem);
+      updateText();
+      allowingModal();
+    });
+    accordionIndication.addEventListener("click", function (e) {
+      for (let i = 0; i < this.children.length; i++) {
+        this.children[i].classList.remove("active");
+      }
+      if (e.target.classList.contains("accordion-link")) {
+        e.target.classList.add("active");
+      } else if (e.target.parentNode.classList.contains("accordion-link")) {
+        e.target.parentNode.classList.add("active");
+      }
+
+    });
+    createPlanBtn.addEventListener("click", function (e) {
+      if (!createPlanBtn.classList.contains("disabled-btn")) {
+        modal.style.display = "flex";
+        finalSummary.innerHTML = summary
+      }
+    })
+    span.addEventListener("click", function (e) {
+      if (!createPlanBtn.classList.contains("disabled-btn")) {
+        modal.style.display = "none";
+      }
+    })
+    // closing the modal af
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // adding html
+
+    coffeeMethods.forEach(function (item, index) {
+      coffeeMethodPanel.innerHTML += `<div class="coffee-selection " index="${index}">
+            <h3 class="fraunces fw-900">${item.item}</h3>
+            <p class="barlow">${item.description}</p>
+          </div>`
+    });
+
+    coffeeTypes.forEach(function (item, index) {
+      coffeeTypePanel.innerHTML += `<div class="coffee-selection" index="${index}">
+            <h3 class="fraunces fw-900">${item.item}</h3>
+            <p class="barlow">${item.description}</p>
+          </div>`
+    });
+    coffeeAmounts.forEach(function (item, index) {
+      coffeeAmountPanel.innerHTML += `<div class="coffee-selection" index="${index}">
+            <h3 class="fraunces fw-900">${item.item}</h3>
+            <p class="barlow">${item.description}</p>
+          </div>`
+    });
+    coffeeGrinds.forEach(function (item, index) {
+      coffeeGrindsPanel.innerHTML += `<div class="coffee-selection" index="${index}">
+            <h3 class="fraunces fw-900">${item.item}</h3>
+            <p class="barlow">${item.description}</p>
+          </div>`
+    });
+    coffeeFrequency.forEach(function (item, index) {
+      coffeeFrequencyPanel.innerHTML += `<div class="coffee-selection" index="${index}">
+            <h3 class="fraunces fw-900">${item.item}</h3>
+            <p class="barlow">${(item.pricePerShipment != "") ? "$" + item.pricePerShipment + " per shipment. " : ""}${item.description}</p>
+          </div>`
+    });
+
+
+    //updating a child node from the coffee
+    function updateCoffeeFrequency(arr) {
+      let children = document.getElementById("coffee-frequency").childNodes;
+      children.forEach(function (item, index) {
+        item.childNodes[3].innerHTML = `$${arr[index]} per shipment.  ${coffeeFrequency[index].description}`;
+      });
+    }
+
+    updateText();
+  </script>
+
+</body>
+
+</html>
