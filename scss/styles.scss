@@ -121,10 +121,15 @@ header {
       }
       .display-show {
         display: flex;
-        height: calc(100vh - 91px);
+        height: calc(100vh - 86px);
         position: absolute;
         bottom: 0;
         background: linear-gradient(#fefcf7, #fefcf7 55%, rgba(254, 252, 247, 0.504981));
+        a {
+          font-weight: 900;
+          font-family: "Fraunces", serif;
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -577,6 +582,9 @@ header {
       flex-direction: column;
       text-align: center;
       background-color: $darkGreyBlue;
+      background-image: url(../assets/about/desktop/bg-quality.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       align-items: center;
       justify-content: start;
       width: 100%;

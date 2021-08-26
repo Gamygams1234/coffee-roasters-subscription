@@ -156,11 +156,16 @@ header .top .right-side .display-show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 91px);
+  height: calc(100vh - 86px);
   position: absolute;
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fefcf7), color-stop(55%, #fefcf7), to(rgba(254, 252, 247, 0.504981)));
   background: linear-gradient(#fefcf7, #fefcf7 55%, rgba(254, 252, 247, 0.504981));
+}
+header .top .right-side .display-show a {
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
 }
 
 .our-collection {
@@ -766,6 +771,9 @@ header .top .right-side .display-show {
           flex-direction: column;
   text-align: center;
   background-color: #343e4c;
+  background-image: url(../assets/about/desktop/bg-quality.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
