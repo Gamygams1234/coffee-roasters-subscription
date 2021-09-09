@@ -86,7 +86,6 @@ header {
     align-items: center;
     width: 100%;
     color: $darkGreyBlue;
-    position: relative;
 
     .right-side {
       display: flex;
@@ -123,7 +122,7 @@ header {
         display: flex;
         height: calc(100vh - 86px);
         position: absolute;
-        bottom: 0;
+        top: 86px;
         background: linear-gradient(#fefcf7, #fefcf7 55%, rgba(254, 252, 247, 0.504981));
         a {
           font-weight: 900;
